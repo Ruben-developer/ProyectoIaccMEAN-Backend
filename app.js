@@ -10,6 +10,7 @@ var producto_routes = require('./routes/producto');
 var cliente_routes = require('./routes/cliente');
 var venta_routes = require('./routes/venta');
 var respaldo_routes = require('./routes/respaldo');
+var bitacora_routes = require('./routes/bitacora');
 
 var app = express();
 
@@ -48,5 +49,6 @@ app.use('/api',producto_routes);
 app.use('/api',cliente_routes);
 app.use('/api',venta_routes);
 app.use('/api',respaldo_routes);
+app.use('/api',bitacora_routes);
 
 module.exports = app;
